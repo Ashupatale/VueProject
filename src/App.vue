@@ -1,18 +1,22 @@
 <template>
   <div id="app">
-    <Home/>
-   
+    <!-- <Home/>
+   <FormValidation/> -->
+   <router-view></router-view>
     </div>
 </template>
 
 <script>
-import Home from './components/Home.vue'
-
-
+// import Home from './components/Home.vue'
+  // import FormValidation from './components/FormValidation.vue'
 export default {
   name: 'App',
   components: {
-    Home,
+    // Home,
+    // FormValidation,
+  },
+  provide:{
+    username:'Welcome Aakash'
   }
 }
 </script>
@@ -24,7 +28,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
- 
+
 }
 
 .home-height{
